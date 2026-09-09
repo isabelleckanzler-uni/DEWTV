@@ -1,0 +1,116 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(".img/back.png");
+    background-attachment: fixed;
+
+}
+
+h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #107C41; 
+    margin-top: 25px;
+    text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+p::first-letter {
+    text-transform: uppercase;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #00FF00;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+#menu {
+    background: linear-gradient(180deg, #62c637 0%, #107C41 50%, #0d5c30 100%);
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    border-bottom: 4px solid #9bee00;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+#menu li {
+    margin: 0 15px;
+}
+
+#menu a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    text-shadow: 1px 1px 2px #000;
+    transition: color 0.2s, text-shadow 0.2s;
+}
+
+#menu a:hover {
+    color: #e5ff75;
+    text-shadow: 0 0 8px #9bee00;
+}
+
+h2 {
+    color: #0e5c2f;
+    border-bottom: 2px solid #82cd3d;
+    padding-bottom: 8px;
+    margin: 30px auto 20px;
+    width: 80%;
+}
+
+#primary-list {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#primary-list li {
+    background: linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(225,240,220,0.9) 100%);
+    border: 2px solid #82cd3d;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255,255,255,0.8);
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+#primary-list li:hover {
+    transform: translateY(-6px) scale(1.02);
+    border-color: #107C41;
+    box-shadow: 0 10px 20px rgba(16, 124, 65, 0.3), 0 0 12px #9bee00;
+}
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 150px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    color: #0d6e38;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(180deg, #107C41 0%, #084724 100%);
+    color: #ffffff;
+    margin-top: 50px;
+    border-top: 3px solid #9bee00;
+    font-weight: bold;
+}
