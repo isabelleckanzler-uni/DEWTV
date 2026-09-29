@@ -2,15 +2,21 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url(".img/back.png");
+    background-image: url("./img/background.jpg");
     background-attachment: fixed;
 
+}
+.banner{
+    background-image: url("./img/banner.png");
+    background-attachment: fixed;
+    padding: 20px;
+    margin: 20px;
 }
 
 h1 {
     font-size: 30px;
     text-transform: uppercase;
-    color: #107C41; 
+    color: #107C41;
     margin-top: 25px;
     text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.8);
 }
@@ -58,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-    color: #0e5c2f;
+    color: #4e5c0ef6;
     border-bottom: 2px solid #82cd3d;
     padding-bottom: 8px;
     margin: 30px auto 20px;
