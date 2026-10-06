@@ -2,15 +2,23 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url("./img/background.jpg");
+    background-image: url("./img/xpwall.jpg");
     background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
 
 }
 .banner{
     background-image: url("./img/banner.png");
-    background-attachment: fixed;
-    padding: 20px;
-    margin: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
@@ -110,7 +118,135 @@ a {
     color: #0d6e38;
     font-weight: bold;
 }
+table {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
 
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+thead tr {
+    background-color: #107C41;
+    color: #ffffff;
+}
+
+thead th {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+tbody tr:hover {
+    background-color: #f1f8f3;
+}
+table a {
+    color: #107C41;
+    text-decoration: underline;
+}
+
+table a:hover {
+    color: #0d5c30;
+}
+form {
+    max-width: 700px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+fieldset {
+    border: 2px solid #107C41;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #107C41;
+    padding: 0 10px;
+    font-size: 1.1rem;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[list] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.button-group {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: #107C41;
+    color: #ffffff;
+}
+
+button[type="submit"]:hover {
+    background-color: #0d5c30;
+}
+
+button[type="reset"] {
+    background-color: #d9534f;
+    color: #ffffff;
+}
+
+button[type="reset"]:hover {
+    background-color: #c9302c;
+}
+details {
+    max-width: 700px;
+    margin: 15px auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px 20px;
+    border-radius: 8px;
+    border-left: 6px solid #107C41;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #107C41;
+    font-size: 1rem;
+}
 footer {
     text-align: center;
     padding: 20px;
