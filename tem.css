@@ -6,8 +6,6 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-
-
 }
 .banner{
     background-image: url("./img/cha.png");
@@ -85,8 +83,10 @@ h2 {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 20px;
+    flex-direction: row;
+    align-items: stretch;
 }
 
 #primary-list li {
@@ -94,7 +94,9 @@ h2 {
     border: 2px solid #82cd3d;
     border-radius: 12px;
     padding: 20px;
-    width: 280px;
+    flex-basis: 30%; 
+    flex-grow: 0;
+    max-width: 320px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255,255,255,0.8);
     transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
 }
@@ -108,8 +110,9 @@ h2 {
 img {
     display: block;
     margin: auto;
-    max-width: 150px;
-    height: auto;
+    max-width: 100%;
+    max-height: 150px;
+    object-fit: contain;
     border-radius: 6px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
