@@ -6,6 +6,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+
 }
 .banner{
     background-image: url("./img/cha.png");
@@ -39,16 +40,16 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
+/*border-bottom: 4px solid #9bee00;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(180deg, #62c637 0%, #107C41 50%, #0d5c30 100%);*/
 
-#menu {
-    background: linear-gradient(180deg, #62c637 0%, #107C41 50%, #0d5c30 100%);
+#menu {    
     padding: 12px 0;
     display: flex;
     justify-content: center;
     list-style: none;
     margin: 0;
-    border-bottom: 4px solid #9bee00;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
 }
 
 #menu li {
@@ -77,7 +78,7 @@ h2 {
     width: 80%;
 }
 
-#primary-list {
+.primary-list {
     list-style: none;
     text-align: center;
     padding: 0;
@@ -89,7 +90,7 @@ h2 {
     align-items: stretch;
 }
 
-#primary-list li {
+.product-item {
     background: linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(225,240,220,0.9) 100%);
     border: 2px solid #82cd3d;
     border-radius: 12px;
@@ -101,7 +102,7 @@ h2 {
     transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
 }
 
-#primary-list li:hover {
+.product-item:hover {
     transform: translateY(-6px) scale(1.02);
     border-color: #107C41;
     box-shadow: 0 10px 20px rgba(16, 124, 65, 0.3), 0 0 12px #9bee00;
@@ -121,20 +122,30 @@ a {
     color: #0d6e38;
     font-weight: bold;
 }
-.header{
+.header {
+    background: linear-gradient(180deg, #62c637 0%, #107C41 50%, #0d5c30 100%);
     position: sticky;
     top:0;
     z-index: 3;
     padding: 10px;
     width:100% ;
+    border-bottom: 4px solid #9bee00;
+    box-sizing: border-box;
 }
-.header.nav{
+.header .nav{
     text-align: center;
 }
 
-.header.nav li{
+.header .nav li{
     display: inline-block;
     margin-right: 10px;
+}
+.header p {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0;
 }
 
 footer {
