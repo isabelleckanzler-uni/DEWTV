@@ -8,6 +8,7 @@ body {
     background-repeat: no-repeat;
 
 }
+
 .banner{
     background-image: url("./img/cha.png");
     background-repeat: no-repeat;
@@ -82,12 +83,17 @@ h2 {
     list-style: none;
     text-align: center;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 20px;
-    flex-direction: row;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 10px 20px;
+    justify-items: center;
     align-items: stretch;
+    align-content: center;
+    grid-template-areas: 
+        "product1 product2 product3"
+        "product4 product5 product6";
 }
 
 .product-item {
@@ -95,8 +101,6 @@ h2 {
     border: 2px solid #82cd3d;
     border-radius: 12px;
     padding: 20px;
-    flex-basis: 30%; 
-    flex-grow: 0;
     max-width: 320px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255,255,255,0.8);
     transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
@@ -107,6 +111,12 @@ h2 {
     border-color: #107C41;
     box-shadow: 0 10px 20px rgba(16, 124, 65, 0.3), 0 0 12px #9bee00;
 }
+.product-1 { grid-area: product1; }
+.product-2 { grid-area: product2; }
+.product-3 { grid-area: product3; }
+.product-4 { grid-area: product4; }
+.product-5 { grid-area: product5; }
+.product-6 { grid-area: product6; }
 
 img {
     display: block;
@@ -148,6 +158,7 @@ a {
     margin: 0;
 }
 
+
 footer {
     text-align: center;
     padding: 20px;
@@ -156,4 +167,28 @@ footer {
     margin-top: 50px;
     border-top: 3px solid #9bee00;
     font-weight: bold;
+  
+}
+@media print {
+    .header,
+    footer {
+        display: none;
+    }
+}
+/*Cell*/
+@media (max-width: 768px) {
+    .primary-list {
+        grid-template-columns: 1fr;
+        grid-template-areas:none;
+        gap: 10px;
+    }
+}
+/*Tablet*/
+@media (max-width: 1024px) {
+    .primary-list {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:none;
+        gap: 10px;
+    }
+
 }
